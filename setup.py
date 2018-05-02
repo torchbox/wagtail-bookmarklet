@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='wagtailbookmarklet',
-    version='0.1.2',
+    version='0.1.4',
     description="Gives Wagtail editors an 'edit this page' bookmarklet",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
@@ -15,9 +15,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=[
-        "wagtail>=1.12"
-    ],
+    install_requires=[],
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
