@@ -1,0 +1,16 @@
+{% extends "wagtailadmin/base.html" %}
+{% load wagtailadmin_tags i18n staticfiles gravatar %}
+
+{% block titletag %}{% trans 'Bookmarklet' %}{% endblock %}
+
+{% block content %}
+    {% trans "Bookmarklet" as title_trans %}
+    {% include "wagtailadmin/shared/header.html" with title=title_trans %}
+
+    <div class="nice-padding">
+        <h3>Drag this link to your bookmarks bar:
+            <a href = "javascript:(function(){location.href='{{ BASE_URL }}{% url 'bookmarklet_redirect' %}?url='+encodeURIComponent(location.href);})();">Edit in Wagtail</a>
+        </h3>
+    </div>
+
+{% endblock %}
