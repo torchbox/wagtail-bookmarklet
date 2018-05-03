@@ -11,3 +11,5 @@ This simple app gives Wagtail editors an 'edit this page' bookmarklet, for scena
 ## Usage
 
 Go to 'Bookmarklet' in the Wagtail admin settings menu. Drag the link to your bookmarks bar.
+
+![Screencast demo](https://tom.s3.amazonaws.com/wagtail-edit-bookmarklet.gif)
